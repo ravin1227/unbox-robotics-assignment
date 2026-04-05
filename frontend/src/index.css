@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Outfit:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply h-full;
+  }
+
+  body {
+    @apply m-0 min-h-full overflow-x-hidden bg-shell font-sans text-slate-900 antialiased;
+  }
+
+  #root {
+    @apply flex min-h-screen w-full flex-col;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Narrow scrollbar for dense log panels (Firefox + WebKit) */
+  .scrollbar-thin-stable {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgb(203 213 225) transparent;
+  }
+  .scrollbar-thin-stable::-webkit-scrollbar {
+    width: 4px;
+  }
+  .scrollbar-thin-stable::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 4px;
+  }
+  .scrollbar-thin-stable::-webkit-scrollbar-thumb {
+    background-color: rgb(203 213 225);
+    border-radius: 9999px;
+  }
+  .scrollbar-thin-stable::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(148 163 184);
+  }
+}

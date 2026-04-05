@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Speedometer">
+  <rect width="32" height="32" rx="8" fill="#00a3b1"/>
+  <path
+    d="M7 21.5a9 9 0 0 1 18 0"
+    fill="none"
+    stroke="rgba(255,255,255,0.35)"
+    stroke-width="2.25"
+    stroke-linecap="round"
+  />
+  <path
+    d="M7 21.5a9 9 0 0 1 12.47-8.36"
+    fill="none"
+    stroke="#fff"
+    stroke-width="2.5"
+    stroke-linecap="round"
+  />
+  <circle cx="16" cy="21.5" r="2.5" fill="#0f172a"/>
+  <path
+    d="M16 21.5L22.5 11"
+    stroke="#0f172a"
+    stroke-width="2.25"
+    stroke-linecap="round"
+  />
+  <circle cx="16" cy="21.5" r="1" fill="#00c9d3"/>
+</svg>
