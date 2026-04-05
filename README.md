@@ -57,7 +57,7 @@ unBox-assignment/
 ### 1. Clone / open the repo
 
 ```bash
-cd unBox-assignment
+cd unbox-robotics-assignment
 ```
 
 Service configuration is set in **`docker-compose.yml`** via the `environment` block on each app service (no host `.env` files required).
@@ -97,8 +97,6 @@ See [ARCHITECTURE.md](./ARCHITECTURE.md) for detailed system design.
 ✅ Queue-based async processing  
 ✅ Live speedometer display  
 ✅ Historical data persistence  
-✅ Fault tolerance with retries  
-✅ Horizontally scalable
 
 ## 🛠️ Tech Stack
 
